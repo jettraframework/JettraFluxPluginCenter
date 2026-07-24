@@ -200,17 +200,14 @@ Start Plugin: MyExample
 End Plugin: MyExample
 **/
 
+
+
+
+
         Widget menu = Left.of(
                 SidebarLogo.of(Icon.LAYER_GROUP, "Ocean"),
-                SidebarCategory.of("Navigation"),
+                SidebarCategory.of("Navigation")
              
-                ecommMenu,
-                exampleMenu,
-                appsMenu,
-                userManagementMenu,
-                uiKitMenu,
-                uiLayoutMenu,
-                rootUiKitMenu
         ).modifier(new io.jettra.flux.core.Modifier().cssClass("professional-left"));
 
         // User Profile Dropdown
