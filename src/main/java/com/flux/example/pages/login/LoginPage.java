@@ -23,7 +23,7 @@ public class LoginPage extends FluxBaseHandler {
 
     @Override
     protected String getTitle() {
-        return "Login - JettraFlux";
+        return "Login - Jettra Flux Plugin Center";
     }
 
     @Override
@@ -61,7 +61,7 @@ public class LoginPage extends FluxBaseHandler {
 
     @Override
     protected Widget buildUI(HttpExchange exchange, Map<String, String> params, String currentTheme) {
-        Widget loginForm = Login.create().action(JettraServer.resolvePath("/login")).title("JettraFlux Admin").logo("https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg").forgotPasswordUrl(JettraServer.resolvePath("/forgot-password"));
+        Widget loginForm = Login.create().action(JettraServer.resolvePath("/login")).title("Jettra Flux Plugin Center Admin").logo("https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg").forgotPasswordUrl(JettraServer.resolvePath("/forgot-password"));
         
         Widget body = Center.of(
             Column.of(
