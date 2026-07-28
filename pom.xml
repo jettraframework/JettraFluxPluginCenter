@@ -88,6 +88,11 @@
             <artifactId>MiNuevoPlugin</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>-->
+        <dependency>
+            <groupId>io.jettraflux.minuevoplugin</groupId>
+            <artifactId>MiNuevoPlugin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
