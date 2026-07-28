@@ -8,7 +8,7 @@ import io.jettra.flux.core.Widget;
 import io.jettra.core.security.widget.PageWidgetAllow;
 import java.util.Map;
 
-@PageWidgetAllow(role={jcf.AppRole.ADMIN, jcf.AppRole.MANAGER})
+@PageWidgetAllow(role={jcf.AppRole.ADMINISTRADOR, jcf.AppRole.GERENTE})
 @io.jettra.core.server.Page(path = "/dashboard")
 public class DashboardPage extends TemplatePage {
 
