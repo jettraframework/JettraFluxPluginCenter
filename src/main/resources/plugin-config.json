@@ -1,0 +1,19 @@
+[
+  {
+    "id": "MiNuevoPlugin",
+    "roles": [
+      {
+        "plugin-role": "ADMIN",
+        "application-role": "ADMIN"
+      },
+      {
+        "plugin-role": "MANAGER",
+        "application-role": "MANAGER"
+      },
+      {
+        "plugin-role": "USER",
+        "application-role": "USER"
+      }
+    ]
+  }
+]
