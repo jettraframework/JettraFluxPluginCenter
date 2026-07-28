@@ -1,4 +1,4 @@
-package com.flux.example.pages;
+package com.flux.example.pages.dashboard;
 
 import io.jettra.flux.widgets.Column;
 import io.jettra.flux.widgets.Paragraph;

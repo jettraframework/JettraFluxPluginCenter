@@ -34,11 +34,10 @@ public class LoginPage extends FluxBaseHandler {
             redirect(exchange, "/login?error=empty_fields");
             return true;
         }
-        String role =user.equals("admin")?"ADMINISTRADOR":"ANONIMO";
-        IO.println("role --->"+role);
+        
+
         if (isValidUser(user, pass)) {
-//            CredentialFlux credentialFlux = new CredentialFlux(user, user + "Prueba", "ADMIN", "", "");
-            CredentialFlux credentialFlux = new CredentialFlux(user, user + "Prueba", role, "", "");
+            CredentialFlux credentialFlux = new CredentialFlux(user, user + "Prueba", "ADMINISTRADOR", "", "");
             io.jettra.server.core.JettraContext.getCurrent().set(io.jettra.server.core.JettraContext.Scope.SESSION, "credentialFlux", credentialFlux);
             setSessionCookie(exchange, user, credentialFlux.role(), credentialFlux.department());
             redirect(exchange, "/dashboard");
