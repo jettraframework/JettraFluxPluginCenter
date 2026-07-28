@@ -146,6 +146,66 @@ Start Plugin: MiNuevoPlugin
 End Plugin: MiNuevoPlugin
 **/
 
+/**
+Start Plugin: OtherPlugin
+**/
+        WidgetLet ecommMenuOtherPlugin = WidgetLet.of("E-Commerce").icon(Icon.HOME);
+        ecommMenuOtherPlugin.add(WidgetLet.of("Dashboard").icon(Icon.CHART_LINE).url(JettraServer.resolvePath("/dashboard")));
+        ecommMenuOtherPlugin.add(WidgetLet.of("Product Overview").icon(Icon.SEARCH).url(JettraServer.resolvePath("/product-overview")));
+        ecommMenuOtherPlugin.add(WidgetLet.of("Product List").icon(Icon.LIST).url(JettraServer.resolvePath("/product-list")));
+        ecommMenuOtherPlugin.add(WidgetLet.of("New Product").icon(Icon.PLUS).url(JettraServer.resolvePath("/new-product")));
+        ecommMenuOtherPlugin.add(WidgetLet.of("Shopping Cart").icon(Icon.SHOPPING_CART).url(JettraServer.resolvePath("/shopping-cart")));
+        ecommMenuOtherPlugin.add(WidgetLet.of("Checkout Form").icon(Icon.CHECK).url(JettraServer.resolvePath("/checkout-form")));
+        ecommMenuOtherPlugin.add(WidgetLet.of("Order History").icon(Icon.HISTORY).url(JettraServer.resolvePath("/order-history")));
+        ecommMenuOtherPlugin.add(WidgetLet.of("Order Summary").icon(Icon.RECEIPT).url(JettraServer.resolvePath("/order-summary")));
+// Example
+        WidgetLet exampleMenuOtherPlugin = WidgetLet.of("Example").icon(Icon.COG);
+        exampleMenuOtherPlugin.add(WidgetLet.of("Person").icon(Icon.CHART_LINE).url(JettraServer.resolvePath("/person")));
+        exampleMenuOtherPlugin.add(WidgetLet.of("Reglas").icon(Icon.RECEIPT).url(JettraServer.resolvePath("/reglas")));
+
+        // Apps
+        WidgetLet appsMenuOtherPlugin = WidgetLet.of("Apps").icon(Icon.TH_LARGE);
+        appsMenuOtherPlugin.add(WidgetLet.of("Chat").icon(Icon.COMMENTS).url(JettraServer.resolvePath("/chat")));
+        appsMenuOtherPlugin.add(WidgetLet.of("Mail Inbox").icon(Icon.ENVELOPE).url(JettraServer.resolvePath("/mail-inbox")));
+        appsMenuOtherPlugin.add(WidgetLet.of("Task List").icon(Icon.CHECK).url(JettraServer.resolvePath("/tasklist")));
+        appsMenuOtherPlugin.add(WidgetLet.of("Files").icon(Icon.FOLDER).url(JettraServer.resolvePath("/files")));
+        appsMenuOtherPlugin.add(WidgetLet.of("File").icon(Icon.FILE).url(JettraServer.resolvePath("/file")));
+
+        WidgetLet userManagementMenuOtherPlugin = WidgetLet.of("User Management").icon(Icon.USER);
+        userManagementMenuOtherPlugin.add(WidgetLet.of("Profile List").icon(Icon.USERS).url(JettraServer.resolvePath("/profile-list")));
+        userManagementMenuOtherPlugin.add(WidgetLet.of("Basic Information").icon(Icon.INFO_CIRCLE).url(JettraServer.resolvePath("/profile-basic-information")));
+
+        WidgetLet uiKitMenuOtherPlugin = WidgetLet.of("UI Components").icon(Icon.LAYER_GROUP);
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Input").icon(Icon.EDIT).url(JettraServer.resolvePath("/input")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Forms").icon(Icon.ALIGN_JUSTIFY).url(JettraServer.resolvePath("/forms")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Icon").icon(Icon.ALIGN_JUSTIFY).url(JettraServer.resolvePath("/icon")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Button Demo").icon(Icon.MOUSE_POINTER).url(JettraServer.resolvePath("/button-demo")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Table").icon(Icon.CHART_BAR).url(JettraServer.resolvePath("/table")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("DataView").icon(Icon.LIST).url(JettraServer.resolvePath("/dataview")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Tree").icon(Icon.SITEMAP).url(JettraServer.resolvePath("/tree")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Panel").icon(Icon.TH_LARGE).url(JettraServer.resolvePath("/panel")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Overlay").icon(Icon.CLONE).url(JettraServer.resolvePath("/overlay")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Media").icon(Icon.IMAGE).url(JettraServer.resolvePath("/media")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Menu").icon(Icon.BARS).url(JettraServer.resolvePath("/menu")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Message").icon(Icon.COMMENTS).url(JettraServer.resolvePath("/message")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Charts").icon(Icon.CHART_PIE).url(JettraServer.resolvePath("/charts")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Timeline").icon(Icon.CALENDAR_ALT).url(JettraServer.resolvePath("/timeline")));
+        uiKitMenuOtherPlugin.add(WidgetLet.of("Misc").icon(Icon.CUBE).url(JettraServer.resolvePath("/misc")));
+
+        WidgetLet uiLayoutMenuOtherPlugin = WidgetLet.of("Layout & Grid").icon(Icon.WINDOW_MAXIMIZE);
+        uiLayoutMenuOtherPlugin.add(WidgetLet.of("Card Demo").icon(Icon.WINDOW_MAXIMIZE).url(JettraServer.resolvePath("/card-demo")));
+        uiLayoutMenuOtherPlugin.add(WidgetLet.of("Grid Layout").icon(Icon.BORDER_ALL).url(JettraServer.resolvePath("/grid-demo")));
+
+        WidgetLet rootUiKitMenuOtherPlugin = WidgetLet.of("UI Kit").icon(Icon.LAYER_GROUP);
+        rootUiKitMenuOtherPlugin.add(uiKitMenuOtherPlugin);
+        rootUiKitMenuOtherPlugin.add(uiLayoutMenuOtherPlugin);
+
+    
+
+/**
+End Plugin: OtherPlugin
+**/
+
         Widget menu = Left.of(
                 SidebarLogo.of(Icon.LAYER_GROUP, "Ocean"),
                 SidebarCategory.of("Navigation"),
@@ -156,7 +216,14 @@ End Plugin: MiNuevoPlugin
                 userManagementMenuMiNuevoPlugin,
                 uiKitMenuMiNuevoPlugin,
                 uiLayoutMenuMiNuevoPlugin,
-                rootUiKitMenuMiNuevoPlugin
+                rootUiKitMenuMiNuevoPlugin,
+                ecommMenuOtherPlugin,
+                exampleMenuOtherPlugin,
+                appsMenuOtherPlugin,
+                userManagementMenuOtherPlugin,
+                uiKitMenuOtherPlugin,
+                uiLayoutMenuOtherPlugin,
+                rootUiKitMenuOtherPlugin
         ).modifier(new io.jettra.flux.core.Modifier().cssClass("professional-left"));
 
         // User Profile Dropdown

@@ -16,4 +16,22 @@
       }
     ]
   }
+,
+  {
+    "id": "OtherPlugin",
+    "roles": [
+      {
+        "plugin-role": "ADMIN",
+        "application-role": "ADMINISTRADOR"
+      },
+      {
+        "plugin-role": "MANAGER",
+        "application-role": "GERENTE"
+      },
+      {
+        "plugin-role": "USER",
+        "application-role": "USER"
+      }
+    ]
+  }
 ]
