@@ -84,11 +84,6 @@
         <!-- Plugin dependency -->
 
 <!---->
-        <dependency>
-            <groupId>io.jettraflux.otherplugin2</groupId>
-            <artifactId>OtherPlugin2</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
