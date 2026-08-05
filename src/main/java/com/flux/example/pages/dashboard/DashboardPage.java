@@ -7,6 +7,7 @@ import com.sun.net.httpserver.HttpExchange;
 import io.jettra.flux.core.Widget;
 import io.jettra.core.security.widget.PageWidgetAllow;
 import java.util.Map;
+import static io.jettra.flux.theme.OceanTheme.DashboardPage.CustomCSS;
 
 @PageWidgetAllow(role={jcf.AppRole.ADMINISTRADOR, jcf.AppRole.GERENTE})
 @io.jettra.core.server.Page(path = "/dashboard")
@@ -20,7 +21,7 @@ public class DashboardPage extends TemplatePage {
     @Override
     protected Widget buildCenter(HttpExchange exchange, Map<String, String> params, String currentTheme) {
         
-        Widget customCss = Paragraph.of(io.jettra.flux.theme.OceanTheme.DashboardPage.CustomCSS);
+        Widget customCss = Paragraph.of(CustomCSS);
 
         // --- Stats Row ---
         Widget stat1 = io.jettra.flux.widgets.StatCard.of("Conversion Rate", "0.8%", "0.81%", false);
