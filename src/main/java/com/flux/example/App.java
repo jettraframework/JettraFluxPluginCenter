@@ -38,6 +38,10 @@ public class App {
             io.jettra.server.autentification.SecurityCLI.main(args);
             return;
         }
+        if (args != null && args.length > 0 && args[0].equals("-generate-flux-jettra-sh")) {
+            io.jettra.server.JettraServer.generateMvnScripts();
+            return;
+        }
 
         App app = new App();
         app.initUI();
