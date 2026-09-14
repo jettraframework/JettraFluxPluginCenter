@@ -22,4 +22,4 @@ Todas las páginas servidas están bloqueadas de forma predeterminada mediante e
 ### `FluxLogin` y Expiración
 El contexto `FluxLogin` maneja el estado del usuario autenticado en la plataforma. Posee soporte integrado para tiempos de caducidad. Si el usuario realiza una petición tras el fin de este periodo, la sesión se destruirá, se renderizará un componente de notificación (modal o script) alertando de la expiración y se realizará una redirección automática forzosa a la pantalla de Login.
 
-*El motor de expiración y ciclos de vida también cuenta con soporte de recolección de basura mediante un hilo en `JettraAppServer` y `JettraContext`.*
+*El motor de expiración y ciclos de vida también cuenta con soporte de recolección de basura mediante un hilo en `JettraEE` y `JettraContext`.*
